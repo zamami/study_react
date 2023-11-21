@@ -1,15 +1,20 @@
+import { useEffect } from "react";
 import { useState } from "react";
 import { ColoredMessage } from "./components/ColoredMessage";
 
 export const App = () => {
 
-  // stateの定義、useState(state変数, stateを更新するための関数)
+  console.log("レンダリング");
   const [num, setNum] = useState(0);
 
-  // ボタンを押した時にstateをカウントアップ
   const onClickButton = () => {
-    setNum(num + 1); //　本来は setNum((num)=> num * 1);　のように関数を使う
+    setNum(num + 1);
   };
+
+  useEffect(()=> {
+    alert()
+  }, [num]);
+  
 
   return (
     <>
