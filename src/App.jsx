@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { ColoredMessage } from "./components/ColoredMessage";
 import { CssModules } from "./components/CssModule";
+import { Emotion } from "./components/Emotion";
 import { StyledComponents } from "./components/StyledComponents";
 import { StyledJsx } from "./components/StyledJsx";
 
@@ -29,6 +30,7 @@ export const App = () => {
       <CssModules />
       <StyledJsx />
       <StyledComponents />
+      <Emotion />
     </>
   );
 };
