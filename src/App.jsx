@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { ColoredMessage } from "./components/ColoredMessage";
 import { CssModules } from "./components/CssModule";
+import { StyledJsx } from "./components/StyledJsx";
 
 export const App = () => {
 
@@ -25,6 +26,7 @@ export const App = () => {
       <button onClick={onClickButton}>ボタン</button>
       <p>{num}</p>
       <CssModules />
+      <StyledJsx />
     </>
   );
 };
