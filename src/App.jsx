@@ -1,5 +1,7 @@
 // コンポーネントのファイルは.jsx
 
+import { ColoredMessage } from "./components/ColoredMessage";
+
 export const App = () => {
 
   /* {}を使ってjsを書くこともできる */
@@ -7,15 +9,11 @@ export const App = () => {
     alert();
   };
 
-  const contentStyle = {
-    color: "blue",
-   fontSize: "20px"  // ※font-sizeではない。JSではオブジェクトのプロパティに-は使えない
-  };
-
   return (
     <>
       <h1 style={{ color: "red" }}>こんにちは！</h1>
-      <p style={contentStyle}>お元気ですか？</p>
+      <ColoredMessage color="blue" message="お元気ですか？" />
+      <ColoredMessage color="pink" message="元気です!" />
       <button onClick={onClickButton}>ボタン</button>
     </>
   );
