@@ -1,3 +1,5 @@
+// コンポーネントのファイルは.jsx
+
 export const App = () => {
   return (
     <>
